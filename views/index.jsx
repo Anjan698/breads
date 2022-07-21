@@ -1,9 +1,15 @@
 const React = require('react')
 const Default = require('./layouts/Default')
+function Show ({bread, index}) {
 
 function Index ({breads})  {
     return (
         <Default>
+            
+<form action={`/breads/${index}?_method=DELETE`} method="POST">
+  <input type='submit' value="DELETE"/>
+</form>
+
         <h2>Index Page</h2>
         {/* <p>I have {breads[0].name} bread!</p> */}
         {/* This is a JSX comment. */}
@@ -16,6 +22,7 @@ function Index ({breads})  {
             {bread.name}
           </a>
         </li>
+        
       )
     })
   }
