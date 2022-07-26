@@ -16,7 +16,8 @@ function Show ({bread,index}) {
           }
           have gluten.
         </p>
-        
+        <a href={`/breads/${index}/edit`}><button>Edit</button></a>
+
         <img src={bread.image} alt={bread.name} />
         <li><a href="/breads">Go home</a></li>
         

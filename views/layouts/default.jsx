@@ -4,6 +4,7 @@ function Default(html) {
   return (
     <html>
     <head>
+      <title>Title</title>
  <link rel="stylesheet" href="/main.css" />
  <link rel="stylesheet" href="/main.css" />
 
