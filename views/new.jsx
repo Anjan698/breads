@@ -1,10 +1,12 @@
 const React = require("react");
 const Default = require("./layouts/Default");
 
-function New() {
+function New({bakers}) {
   return (
     <Default>
       <h2>Add a new bread</h2>
+      <label htmlFor="baker">Baker</label>
+      
       <form action="/breads" method="POST">
         <label htmlFor="name">Name</label>
         <input type="text" name="name" id="name" required />
