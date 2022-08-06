@@ -4,7 +4,7 @@ function Default(html) {
   return (
     <html>
       <head>
-        <title>Title</title>
+        <title>BredCRUD</title>
         <link rel="stylesheet" href="/main.css" />
         <link rel="stylesheet" href="/main.css" />
       </head>

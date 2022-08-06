@@ -5,11 +5,10 @@ function Edit({ bread, index }) {
   return (
     <Default>
       <h2>Edit a bread</h2>
-      <a href={`/breads/${index}/edit`}>
+      <a href={`/breads/${bread.id}/edit`}>
         <button>Edit</button>
       </a>
-
-      <form>
+        <form action={`/breads/${bread.id}?_method=PUT`} method="POST">
         <label htmlFor="name">Name</label>
         <input
           type="text"
@@ -30,6 +29,8 @@ function Edit({ bread, index }) {
         <br />
         <input type="submit" />
       </form>
+     
+
     </Default>
   );
 }
